@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Festival Quiz Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Music Festival Quiz Challenge</h1>
+    <p>Let's test your knowledge!</p>
+    <button id="highscores">View High Scores</button>
+
+    <section class="start">
+        <h1>How well do you know music festivals?</h1>
+        <h3>Instructions:</h3>
+        <p>Answer as many questions as you can before the timer runs out!</p>
+        <p>Each incorrect answer will reduce your time down even faster, the time remaining at the end of the quiz will be your final score!</p>
+        <p>See where you rank amongst the rest!</p>
+        <button id="startbtn">Start Quiz!</button>
+    </section>
+    
+    <main class="content">
+        <header>
+            <h1 class="title">Music Festival Quiz Challenge</h1>
+            <div>
+                <p class="time-remaining">Time Remaining:</p>
+                
+            </div>
+        </header>
+
+        <section class="quiz">
+            <section class="questions"></section>
+            <section class="answers"></section>
+        </section>
+
+        <footer>
+            <button class="prev-btn">Previous</button>
+            <button class="nxt-btn">Next</button>
+        </footer>
+    </main>
+
+    <section class="results">
+        <h1>That's the end! Thank you!</h1>
+        <input placeholder="Initials" id="initial">
+        <button id="submit">Submit</button>
+    </section>
+
+    <section class="score">
+        <h1>High Score</h1>
+        <button id="restart">Restart Quiz</button>
+        <button id="clear">Clear High Scores</button>
+    </section>
+</body>
+</html>
