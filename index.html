@@ -8,50 +8,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <h1>Music Festival Quiz Challenge</h1>
-    <p>Let's test your knowledge!</p>
-    <button id="highscores">View High Scores</button>
+    <!-- Home Page -->
+    <div class="container">
 
-    <section class="start">
-        <h1>How well do you know music festivals?</h1>
-        <h3>Instructions:</h3>
-        <p>Answer as many questions as you can before the timer runs out!</p>
-        <p>Each incorrect answer will reduce your time down even faster, the time remaining at the end of the quiz will be your final score!</p>
-        <p>See where you rank amongst the rest!</p>
-        <button id="startbtn">Start Quiz!</button>
-    </section>
-    
-    <main class="content">
-        <header>
-            <h1 class="title">Music Festival Quiz Challenge</h1>
-            <div>
-                <p class="time-remaining">Time Remaining:</p>
-                
-            </div>
-        </header>
+        <section class="start-info">
+            <h1>Music Festival Quiz Challenge</h1>
+            <h3>Instructions:</h3>
+            <p>Answer as many questions as you can before the timer runs out!</p>
+            <p>Each incorrect answer will reduce your time down even faster, the time remaining at the end of the quiz will be your final score!</p>
+            <p>Let's test your knowledge!</p>
+            <button onclick="startQuiz()" id="start-btn">Start Quiz!</button>
+            <button onclickl="viewScores()" id="high-scores-btn">View High Scores</button>
+        </section>
+        
+        <!-- Quiz -->
+        <main class="quiz-container">
+            <header>
+                <h1 class="title">Music Festival Quiz Challenge</h1>
+                <div class="timer">
+                    <p class="time-remaining">Time Remaining: </p>
+                    <div class="timer-sec">200</div>
+                </div>
+            </header>
 
-        <section class="quiz">
-            <section class="questions"></section>
-            <section class="answers"></section>
+            <section class="quiz-questions">
+                <h1 class="questions">Present Question</h1>
+                <button class="a">Option A</button>
+                <button class="b">Option B</button>
+                <button class="c">Option C</button>
+                <button class="d">Option D</button>
+            </section>
+
+            <footer>
+                <button class="prev-btn">Previous</button>
+                <button class="nxt-btn">Next</button>
+            </footer>
+        </main>
+
+        <!-- Results -->
+        <section class="results">
+            <h1>That's the end! Thank you!</h1>
+            <input placeholder="Initials" id="initial">
+            <button id="submit">Submit</button>
         </section>
 
-        <footer>
-            <button class="prev-btn">Previous</button>
-            <button class="nxt-btn">Next</button>
-        </footer>
-    </main>
+        <section class="scores">
+            <h1>High Score(s)</h1>
+            <button id="restart">Restart Quiz</button>
+            <button id="clear">Clear High Scores</button>
+        </section>
+    </div>
+        
 
-    <section class="results">
-        <h1>That's the end! Thank you!</h1>
-        <input placeholder="Initials" id="initial">
-        <button id="submit">Submit</button>
-    </section>
+    <script type="text/javascript" src="./script.js"></script>
 
-    <section class="score">
-        <h1>High Score</h1>
-        <button id="restart">Restart Quiz</button>
-        <button id="clear">Clear High Scores</button>
-    </section>
 </body>
 </html>

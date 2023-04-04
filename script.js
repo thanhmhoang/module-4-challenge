@@ -1,6 +1,6 @@
 
 // Creating an array for questions
-var questions = [
+var questions = [ 
     {
         question: "What is the largest music festival in the world?"
         answerA: "Coachella"
@@ -17,7 +17,7 @@ var questions = [
         answerC: "Lollapalooza"
         answerD: "Coachella"
         correctAnswer: "answerD"
-    }
+    },
 
     {
         question: "Which is not a music festival promotor company?"
@@ -26,7 +26,7 @@ var questions = [
         answerC: "LVMH"
         answerD: "LiveStyle"
         correctAnswer: "answerC"
-    }
+    },
 
     {
         question: "Whose are the headlining acts for Coachella 2023?"
@@ -35,7 +35,7 @@ var questions = [
         answerC: "Harry Styles, Billie Eilish, Swedish House Mafia x The Weeknd"
         answerD: "Kendrick Lamar, Tame Impala, Coldplay"
         correctAnswer: "answerB"
-    }
+    },
 
     {
         question: "Stages at Coachella are named after what?"
@@ -44,7 +44,7 @@ var questions = [
         answerC: "Oceans"
         answerD: "Planets"
         correctAnswer: "answerA"
-    }
+    },
 
     {
         question: "So who is trying to buy my Coachella ticket?"
@@ -53,6 +53,17 @@ var questions = [
         answerC: "Youuuu"
         answerD: "All the above"
         correctAnswer: "answerD"
-    }
+    },      
 ]
 
+function startQuiz() {
+    var myQuiz = document.getElementsByClassName("quiz-container")
+    var displayQuiz = myQuiz.style.display;
+
+    if(displayQuiz == 'block') {
+        myQuiz.style.display = "none";
+    }
+    else{
+        myQuiz.style.display = "block";
+    }
+}
