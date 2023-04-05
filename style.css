@@ -11,9 +11,6 @@
     height: 80vh;
 }
 
-.quiz-container {
-    display: none;
-}
 
 .results {
     display: flex;
@@ -23,18 +20,10 @@
     height: 80vh;
 }
 
-.results {
-    display: none;
-}
-
 .scores {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.scores {
-    display: block;
 }
 
 .start-info {
@@ -44,7 +33,6 @@
     align-items: center;
     height: 80vh;
     width: 100%;
-    display: none;
 }
 
 .start-info h1 {

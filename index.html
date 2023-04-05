@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Home Page -->
-    <div class="container">
+    <main class="quiz-container">
 
         <section class="start-info">
             <h1>Music Festival Quiz Challenge</h1>
@@ -22,28 +22,21 @@
         </section>
         
         <!-- Quiz -->
-        <main class="quiz-container">
-            <header>
+        
+            <section id="intrp">
                 <h1 class="title">Music Festival Quiz Challenge</h1>
                 <div class="timer">
                     <p class="time-remaining">Time Remaining: </p>
                     <div class="timer-sec">200</div>
                 </div>
-            </header>
-
-            <section class="quiz-questions">
-                <h1 class="questions">Present Question</h1>
-                <button class="a">Option A</button>
-                <button class="b">Option B</button>
-                <button class="c">Option C</button>
-                <button class="d">Option D</button>
             </section>
 
-            <footer>
-                <button class="prev-btn">Previous</button>
-                <button class="nxt-btn">Next</button>
-            </footer>
-        </main>
+            <section class="quiz-questions">
+                <h1 id="questions"></h1>
+                <div id="choices" class="choices">
+
+                </div>
+            </section>
 
         <!-- Results -->
         <section class="results">
@@ -58,7 +51,7 @@
             <button id="clear">Clear High Scores</button>
         </section>
     </div>
-        
+    </main>    
 
     <script type="text/javascript" src="./script.js"></script>
 
