@@ -9,13 +9,13 @@ N/A
 
 ## Usage
 
-To use this quiz, please click on this link, https://thanhmhoang.github.io/module-3-challenge/. When users reach the webpage, they can click the button to generate a password, then are presented with a series of prompts for password criteria. Users must select a password length of at least 8 characters and no more than 128 characters. They will also have to choose if they would like their password to contain lowercase letters, uppercase letters, numbers, and/or special characters. Users must choose at least one character type in order for their password to generate. Once the necessary criterias are met, a password that matches the selected criterias will be generated for the user.
+To use this quiz, please click on this link, https://thanhmhoang.github.io/module-4-challenge/. When users reach the webpage, they can read the instructions, then when they are ready to proceed, they will click the start button to begin the quiz. Users must select one of the four multiple choice options, one they've made their choice, it will move them forward to the next question. There is a timer in the bottom left that counts down, for every wrong answer, the timer will go down 5 seconds. Whatever time is left when the quiz is complete, will be the user's final score. A results box will then pop up with their final score and an input box where users will input their initials then click the submit button which will then save their high score. Users will then refresh the page if they would like to play again.
 
 
 ## Credits
 
-Andrew Mason - Central Tutors FSF Tutor
+Thien Nguyen - Former UW Bootcamp student
 
 ## License
 
-N/A
+MIT 
